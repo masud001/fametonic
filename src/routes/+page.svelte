@@ -14,6 +14,5 @@
 </script>
 
 <AnnouncementBar {announcements} />
-
 <Header />
 <Contents />
