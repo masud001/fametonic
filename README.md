@@ -1,20 +1,5 @@
-# Project Folder Structure
+## links
 
-`famentonic/
-├── src/
-│ ├── lib/
-│ │ ├── components/
-│ │ │ ├── AnnouncementBar.svelte
-│ │ │ ├── Contents.svelte
-│ │ │ ├── Header.svelte
-│ │ │ ├── KeyFeatures.svelte
-│ │ └── types.ts
-│ ├── routes/
-│ │ └── +page.svelte
-├── static/
-│ ├── data/
-│ │ ├── announcements.json
-│ │ ├── keyFeatures.json
-├── package.json
-├── svelte.config.js
-├── README.md`
+- [GitHub Repository](https://github.com/masud001/fametonic).
+
+- [Live Demo](https://fametonic-live-demo.netlify.app/).
