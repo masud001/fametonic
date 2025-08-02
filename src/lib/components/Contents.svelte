@@ -47,7 +47,7 @@
 						class="font-figtree drop-shadow-(--my-drop-shadow) flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[#fc004e] px-10 py-2 text-xl font-bold text-white"
 						aria-label="Take the 1-minute quiz to get started"
 					>
-						GET STARTED →
+						GET STARTED <span><img src="/images/angle-icon.svg" alt="angle-icon" /></span>
 					</button>
 					<p class="font-figtree text-xs font-normal text-white">
 						1-minute quiz for personalized insights
