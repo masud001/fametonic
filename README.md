@@ -5,6 +5,7 @@
 
 ## LightHouse Report
 
-![Screenshot for desktop.](/static/screenshots/screenshot-desktop.png)
-
-![Screenshot for mobile.](/static/screenshots/screenshot-mobile.png)
+- ### Desktop Report
+  ![Screenshot for desktop.](/static/screenshots/screenshot-desktop.png)
+- ### Mobile Report
+  ![Screenshot for mobile.](/static/screenshots/screenshot-mobile.png)
