@@ -1,6 +1,6 @@
 # Project Folder Structure
 
-famentonic/
+`famentonic/
 ├── src/
 │ ├── lib/
 │ │ ├── components/
@@ -17,4 +17,4 @@ famentonic/
 │ │ ├── keyFeatures.json
 ├── package.json
 ├── svelte.config.js
-├── README.md
+├── README.md`
