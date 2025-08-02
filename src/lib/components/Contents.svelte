@@ -1,3 +1,15 @@
+<script lang="ts">
+	import KeyFeatures from './KeyFeatures.svelte';
+	import { onMount } from 'svelte';
+	let features: string[] = [];
+
+	// Fetch the JSON data dynamically
+	onMount(async () => {
+		const response = await fetch('/data/keyFeatures.json');
+		features = await response.json();
+	});
+</script>
+
 <section
 	class="max-w-md:pt-5 flex w-full flex-row items-center justify-center md:py-[57px]"
 	aria-labelledby="hero-heading"
@@ -24,36 +36,7 @@
 			</h2>
 
 			<!-- Key Features List -->
-			<ul
-				class="flex flex-col gap-y-[13px] pb-[30px] pt-4 text-start"
-				aria-label="Key features"
-				role="list"
-			>
-				<li class="flex items-start gap-x-2.5" role="listitem">
-					<span class="flex-shrink-0 font-bold" aria-hidden="true">✨</span>
-					<p class="font-figtree text-[16px] font-semibold text-white">
-						Start growing your influence right away—no waiting required!
-					</p>
-				</li>
-				<li class="flex items-start gap-x-2.5" role="listitem">
-					<span class="flex-shrink-0 font-bold" aria-hidden="true">✨</span>
-					<p class="font-figtree text-[16px] font-semibold text-white">
-						Create viral TikToks and Reels step by step with easy-to-follow lessons.
-					</p>
-				</li>
-				<li class="flex items-start gap-x-2.5" role="listitem">
-					<span class="flex-shrink-0 font-bold" aria-hidden="true">✨</span>
-					<p class="font-figtree text-[16px] font-semibold text-white">
-						Use a Personal AI Worker to boost your content.
-					</p>
-				</li>
-				<li class="flex items-start gap-x-2.5" role="listitem">
-					<span class="flex-shrink-0 font-bold" aria-hidden="true">✨</span>
-					<p class="font-figtree text-[16px] font-semibold text-white">
-						Learn from expert-led courses designed for aspiring influencers.
-					</p>
-				</li>
-			</ul>
+			<KeyFeatures {features} />
 
 			<!-- Call to Action -->
 			<div class="flex flex-col-reverse gap-y-[30px] lg:flex-col">
@@ -103,7 +86,7 @@
 					width="666"
 					height="679"
 					decoding="async"
-					class="home-image xl:scale-116 w-full max-w-xs object-cover object-center sm:max-w-sm lg:max-w-md xl:max-w-lg"
+					class="home-image xl:scale-115 w-full max-w-xs object-cover object-center sm:max-w-sm lg:max-w-md xl:max-w-lg"
 					src="/images/fametonic-home-page-image.webp"
 				/>
 			</picture>
