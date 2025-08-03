@@ -9,33 +9,12 @@ Discover Fametonic: the ultimate platform for creators to go viral on TikTok, gr
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Development](#Development)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [lighthouse Scores](#lighthouse-scores)
-
-### ✨ Features
-
-- **Responsive Design**: Mobile-first approach with desktop optimization
-- **Performance Optimized**: WebP images, lazy loading, and optimized assets
-- **Accessibility**: ARIA labels, semantic HTML, and keyboard navigation
-- **Modern UI**: Dark theme with neon accents and custom typography
-- **Content Management**: JSON-based content for easy updates
-- **SEO Optimized**: Proper meta tags and semantic structure
-
-### 🛠️ Tech Stack
-
-- **Framework**: [SvelteKit 2.22.0](https://kit.svelte.dev/)
-- **UI Library**: [Svelte 5.0.0](https://svelte.dev/)
-- **Styling**: [Tailwind CSS 4.0.0](https://tailwindcss.com/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool**: [Vite 7.0.4](https://vitejs.dev/)
-- **Testing**: [Vitest](https://vitest.dev/) + [Playwright](https://playwright.dev/)
-- **Deployment**: [Netlify](https://netlify.com/)
 
 ### 🚀 Getting Started
 
