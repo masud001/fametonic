@@ -12,7 +12,7 @@
 			<li class="announcement-item flex items-start gap-0.5 sm:gap-2" role="listitem">
 				<span class="announcement-icon">{announcement.icon}</span>
 				<a
-					class="font-figtree text-[15px] leading-[19px] no-underline hover:underline focus:underline md:text-[22px] md:leading-[26px]"
+					class="font-figtree text-text-primary text-[15px] leading-[19px] no-underline md:text-[22px] md:leading-[26px]"
 					aria-label={announcement.ariaLabel}
 					href={announcement.link}
 				>
