@@ -42,7 +42,7 @@
 					>
 						GET STARTED 
 						<span>
-							<img src="/images/angle-icon.svg" alt="angle-icon" />
+							<img width="11" height="6" src="/images/angle-icon.svg" alt="angle-icon" />
 						</span>
 					</button>
 					
@@ -59,16 +59,16 @@
 		<!-- Right Content - Hero Image -->
 		<div class="flex w-full flex-1 justify-center md:w-1/2 lg:justify-end">
 			<picture>
-				<source srcset="/images/fametonic-home-page-image-mobile.webp" media="(max-width: 768px)" />
-				<source srcset="/images/fametonic-home-page-image.webp" media="(min-width: 769px)" />
+				<source srcset="/images/fametonic-home-page.png" media="(max-width: 768px)" type="image/webp"/>
+				<source srcset="/images/fametonic-home-page.png" media="(min-width: 769px)" type="image/webp" />
 				<img
 					alt="Fametonic App Screenshot showcasing features for social media success"
-					loading="lazy"
+					loading="eager"
 					width="666"
 					height="679"
 					decoding="async"
 					class="home-image xl:scale-115 w-full max-w-xs object-cover object-center sm:max-w-sm lg:max-w-md xl:max-w-lg"
-					src="/images/fametonic-home-page-image.webp"
+					src="/images/fametonic-home-page.png"
 				/>
 			</picture>
 		</div>

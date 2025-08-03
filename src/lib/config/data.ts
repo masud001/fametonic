@@ -19,22 +19,22 @@ export const keyFeatures: KeyFeature[] = [
 	{
 		id: 'immediate-start',
 		text: 'Start growing your influence right away—no waiting required!',
-		icon: '⚡'
+		icon: '✨'
 	},
 	{
 		id: 'viral-content',
 		text: 'Create viral TikToks and Reels step by step with easy-to-follow lessons',
-		icon: '📱'
+		icon: '✨'
 	},
 	{
 		id: 'ai-worker',
 		text: 'Use a Personal AI Worker to boost your content',
-		icon: '🤖'
+		icon: '✨'
 	},
 	{
 		id: 'expert-courses',
 		text: 'Learn from expert-led courses designed for aspiring influencers',
-		icon: '🎓'
+		icon: '✨'
 	}
 ];
 
