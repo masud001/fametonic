@@ -75,7 +75,13 @@ fametonic/
 │   │   │   ├── Contents.svelte
 │   │   │   ├── Footer.svelte
 │   │   │   ├── Header.svelte
-│   │   │   └── KeyFeatures.svelte
+│   │   │   ├── KeyFeatures.svelte
+│   │   │   ├── MobileBackdrop.svelte      # Mobile navigation backdrop
+│   │   │   ├── MobileMenuButton.svelte    # Hamburger menu button
+│   │   │   ├── MobileNavigation.svelte    # Mobile navigation drawer
+│   │   │   └── MobileNavigationDemo.svelte # Example implementation
+│   │   ├── stores/              # Svelte stores for state management
+│   │   │   └── mobileNavigation.ts        # Mobile navigation state
 │   │   ├── types.ts             # TypeScript type definitions
 │   │   └── index.ts             # Component exports
 │   ├── routes/                  # SvelteKit routes
@@ -104,6 +110,23 @@ fametonic/
 | `npm run check` | Type check with SvelteKit |
 | `npm run lint` | Run ESLint and Prettier |
 | `npm run format` | Format code with Prettier |
+
+### Component Usage
+
+All components are available through centralized imports:
+
+```svelte
+<script>
+// Import multiple components at once
+import { Header, Footer, Contents, AnnouncementBar, KeyFeatures } from '$lib';
+
+// Import mobile navigation components
+import { MobileMenuButton, MobileBackdrop, MobileNavigation } from '$lib';
+
+// Import mobile navigation store and actions
+import { mobileNavigationStore, mobileNavigationActions } from '$lib';
+</script>
+```
 
 ### Code Quality
 
@@ -175,14 +198,49 @@ The project is optimized for performance with:
 
 ### Components
 - **AnnouncementBar**: Promotional messages
-- **Header**: Navigation with responsive logo
+- **Header**: Navigation with responsive logo and mobile menu button
 - **Contents**: Hero section with value proposition
 - **KeyFeatures**: Platform benefits list
 - **Footer**: Additional information
 
+### Mobile Navigation Components
+- **MobileMenuButton**: Animated hamburger menu button with toggle functionality
+- **MobileBackdrop**: Clickable backdrop overlay for mobile navigation
+- **MobileNavigation**: Sliding navigation drawer with navigation links
+- **MobileNavigationDemo**: Example implementation showing all components together
+
 ## 📱 Mobile Navigation
 
-- I already implemented Mobile navbar, but as for the design i make it hidden. you can remove "hidden" class from `Header component` `drawer` and `backdrop` elements. i commented it to `Header Component`
+The project includes a complete mobile navigation system with centralized state management:
+
+### 🏗️ Architecture
+- **Centralized State**: Uses Svelte stores for single source of truth
+- **Reusable Components**: Modular components that can be used anywhere
+- **Accessibility**: Full ARIA support and keyboard navigation
+- **Responsive Design**: Mobile-first approach with smooth animations
+
+### 🔧 Components
+- **MobileMenuButton**: Currently active - hamburger menu button visible on mobile
+- **MobileBackdrop**: Temporarily hidden - backdrop overlay for mobile navigation
+- **MobileNavigation**: Temporarily hidden - sliding navigation drawer
+
+### 📍 Current Status
+- ✅ **MobileMenuButton**: Active and functional
+- ⏸️ **MobileBackdrop**: Temporarily commented out in Header component
+- ⏸️ **MobileNavigation**: Temporarily commented out in Header component
+
+### 🚀 To Re-enable Full Mobile Navigation
+Uncomment these lines in `src/lib/components/Header.svelte`:
+```svelte
+<!-- Mobile Navigation Components - Temporarily Hidden -->
+<MobileBackdrop />
+<MobileNavigation />
+```
+
+### 🎯 State Management
+The mobile navigation uses a centralized store (`src/lib/stores/mobileNavigation.ts`) that provides:
+- **mobileNavigationStore**: Reactive state for navigation open/close
+- **mobileNavigationActions**: Methods to toggle, open, and close navigation
 
 ## 🖼️ Content Images
 

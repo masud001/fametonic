@@ -1,23 +1,5 @@
 <script lang="ts">
-	/*
-	 * this is mobile drawer navigation state.
-	 * Note: currently mobile drawer navigation is not used.
-	 * to de-activate navigation on mobile i used "hidden" class.
-	 * to activate it, you can remove the "hidden" class from the drawer and backdrop elements.
-	 */
-
-	// State for mobile drawer navigation
-	let isDrawerOpen = false;
-
-	// Function to toggle the drawer state
-	const toggleDrawer = () => {
-		isDrawerOpen = !isDrawerOpen;
-	};
-
-	// Function to close the drawer
-	const closeDrawer = () => {
-		isDrawerOpen = false;
-	};
+	import { MobileBackdrop, MobileNavigation, MobileMenuButton } from '$lib';
 </script>
 
 <header class="relative flex w-full justify-center">
@@ -72,60 +54,11 @@
 
 		<!-- Mobile Menu Button -->
 		<div class="ml-auto md:hidden">
-			<button
-				aria-label={isDrawerOpen ? 'Close mobile menu' : 'Open mobile menu'}
-				aria-expanded={isDrawerOpen}
-				class="relative z-20 flex flex-col gap-y-1.5 focus:outline-none"
-				tabindex="0"
-				on:click={toggleDrawer}
-			>
-				<span
-					class="bg-mobile-menu-btn block h-0.5 w-6 transition-transform duration-300"
-					style:transform={isDrawerOpen ? 'rotate(45deg) translateY(11px)' : 'none'}
-				></span>
-				<span
-					class="bg-mobile-menu-btn block h-0.5 w-6 transition-opacity duration-300"
-					style:opacity={isDrawerOpen ? '0' : '1'}
-				></span>
-				<span
-					class="bg-mobile-menu-btn block h-0.5 w-6 transition-transform duration-300"
-					style:transform={isDrawerOpen ? 'rotate(-48deg) translateY(-12px)' : 'none'}
-				></span>
-			</button>
+			<MobileMenuButton />
 		</div>
 	</div>
 
-	<!-- Drawer Backdrop -->
-	{#if isDrawerOpen}
-		<button
-			type="button"
-			aria-label="Close mobile menu"
-			class="fixed inset-0 z-10 hidden bg-gray-900 bg-opacity-25 transition-opacity duration-300"
-			on:click={closeDrawer}
-		></button>
-	{/if}
-
-	<!-- Drawer Navigation -->
-	<div
-		class="bg-primary-bg fixed right-0 top-0 z-20 hidden h-full w-64 shadow-lg transition-transform duration-300"
-		style:transform={isDrawerOpen ? 'translateX(0)' : 'translateX(100%)'}
-		aria-hidden={!isDrawerOpen}
-	>
-		<nav class="flex flex-col p-5" aria-label="Mobile navigation">
-			<a
-				href="/"
-				class="font-figtree text-menu-color hover:text-hover-text mb-4 text-lg font-semibold leading-normal"
-				on:click={closeDrawer}
-			>
-				About
-			</a>
-			<a
-				href="/"
-				class="font-figtree text-menu-color hover:text-hover-text mb-4 text-lg font-semibold leading-normal"
-				on:click={closeDrawer}
-			>
-				Contact
-			</a>
-		</nav>
-	</div>
+	<!-- Mobile Navigation Components - Temporarily Hidden -->
+	<!-- <MobileBackdrop /> -->
+	<!-- <MobileNavigation /> -->
 </header>

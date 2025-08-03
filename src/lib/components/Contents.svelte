@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Footer from './Footer.svelte';
-	import KeyFeatures from './KeyFeatures.svelte';
+	import { Footer, KeyFeatures } from '$lib';
 	import { onMount } from 'svelte';
 	let features: string[] = [];
 

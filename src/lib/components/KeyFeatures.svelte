@@ -10,7 +10,7 @@
 	{#each features as feature (feature)}
 		<li class="flex items-start gap-x-2.5" role="listitem">
 			<span class="flex-shrink-0 font-bold" aria-hidden="true">✨</span>
-			<p class="font-figtree text-base font-semibold leading-[1.38] text-white">{feature}</p>
+			<p class="font-figtree text-base font-semibold md:leading-[1.38] text-text-primary">{feature}</p>
 		</li>
 	{/each}
 </ul>
