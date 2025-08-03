@@ -42,13 +42,13 @@
 		<!-- Desktop Navigation -->
 		<nav class="hidden items-center gap-x-10 md:flex" aria-label="Main navigation">
 			<a
-				href="/about"
-				class="font-figtree hover:text-text text-lg font-semibold text-[#A9A9A9] transition-colors duration-300"
+				href="/"
+				class="font-figtree hover:text-text text-menu-color text-lg font-semibold"
 				tabindex="0">About</a
 			>
 			<a
-				href="/contact"
-				class="font-figtree hover:text-text text-lg font-semibold text-[#A9A9A9] transition-colors duration-300"
+				href="/"
+				class="font-figtree hover:text-text text-menu-color text-lg font-semibold"
 				tabindex="0">Contact</a
 			>
 		</nav>
@@ -63,15 +63,15 @@
 				on:click={() => (isDrawerOpen = !isDrawerOpen)}
 			>
 				<span
-					class="block h-0.5 w-6 bg-white transition-transform duration-300"
+					class="bg-mobile-menu-btn block h-0.5 w-6 transition-transform duration-300"
 					style:transform={isDrawerOpen ? 'rotate(45deg) translateY(11px)' : 'none'}
 				></span>
 				<span
-					class="block h-0.5 w-6 bg-white transition-opacity duration-300"
+					class="bg-mobile-menu-btn block h-0.5 w-6 transition-opacity duration-300"
 					style:opacity={isDrawerOpen ? '0' : '1'}
 				></span>
 				<span
-					class="block h-0.5 w-6 bg-white transition-transform duration-300"
+					class="bg-mobile-menu-btn block h-0.5 w-6 transition-transform duration-300"
 					style:transform={isDrawerOpen ? 'rotate(-48deg) translateY(-12px)' : 'none'}
 				></span>
 			</button>
@@ -83,26 +83,26 @@
 		<button
 			type="button"
 			aria-label="Close mobile menu"
-			class="fixed inset-0 z-10 hidden bg-[#010101] bg-opacity-25 transition-opacity duration-300"
+			class="bg-primary-bg fixed inset-0 z-10 hidden bg-opacity-25 transition-opacity duration-300"
 			on:click={() => (isDrawerOpen = false)}
 		></button>
 	{/if}
 
 	<!-- Drawer Navigation  (NOTE:remove hidden class when navigation is active)-->
 	<div
-		class="fixed right-0 top-0 z-20 hidden h-full w-64 bg-gray-100 shadow-lg transition-transform duration-300"
+		class="bg-primary-bg fixed right-0 top-0 z-20 hidden h-full w-64 shadow-lg transition-transform duration-300"
 		style:transform={isDrawerOpen ? 'translateX(0)' : 'translateX(100%)'}
 		aria-hidden={!isDrawerOpen}
 	>
 		<nav class="flex flex-col p-5" aria-label="Mobile navigation">
 			<a
-				href="/about"
-				class="font-figtree mb-4 text-lg font-semibold text-gray-800 hover:text-gray-600"
+				href="/"
+				class="font-figtree text-menu-color hover:text-hover-text mb-4 text-lg font-semibold"
 				on:click={() => (isDrawerOpen = false)}>About</a
 			>
 			<a
-				href="/contact"
-				class="font-figtree mb-4 text-lg font-semibold text-gray-800 hover:text-gray-600"
+				href="/"
+				class="font-figtree text-menu-color hover:text-hover-text mb-4 text-lg font-semibold"
 				on:click={() => (isDrawerOpen = false)}>Contact</a
 			>
 		</nav>

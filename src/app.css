@@ -1,3 +1,4 @@
+/* i used for from google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import 'tailwindcss';
@@ -8,7 +9,14 @@
 @theme {
     --font-figtree: "Figtree", sans-serif; 
     --font-urbanist: "Urbanist", sans-serif; 
+    --color-primary-bg:#010101;
     --color-primary: #10CBE0;
     --color-secondary: #FC004E;
-    --my-drop-shadow: 2px 2px 5px #00e7f9;
+    --color-primary-light: #00e7f9;
+    --color-text-primary: #ffffff;
+    --color-menu-color:#A9A9A9;
+    --color-mobile-menu-btn:#ffffff;
+    --color-hover-text:#ffffff;
+    --color-footer-text:#ABABAB;
+    --shadow-button: 2px 2px 10px 0 #00e7f9;
   }

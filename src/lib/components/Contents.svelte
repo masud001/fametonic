@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Footer from './Footer.svelte';
 	import KeyFeatures from './KeyFeatures.svelte';
 	import { onMount } from 'svelte';
 	let features: string[] = [];
@@ -22,7 +23,7 @@
 			<!-- Hero Heading -->
 			<h1
 				id="hero-heading"
-				class="font-urbanist text-[33px] font-bold leading-[42px] text-white max-[480px]:text-[25px] max-[480px]:leading-[30px]"
+				class="font-urbanist text-text-primary text-[33px] font-bold leading-[42px] max-[480px]:text-[25px] max-[480px]:leading-[30px]"
 			>
 				Want to Turn Social Media Into a Profitable Career?
 			</h1>
@@ -44,34 +45,18 @@
 					class="flex w-full flex-col justify-center gap-y-2.5 text-center align-middle lg:w-[313px]"
 				>
 					<button
-						class="font-figtree drop-shadow-(--my-drop-shadow) flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[#fc004e] px-10 py-2 text-xl font-bold text-white"
+						class="font-figtree shadow-button text-text-primary bg-secondary flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl px-10 py-2 text-xl"
 						aria-label="Take the 1-minute quiz to get started"
 					>
 						GET STARTED <span><img src="/images/angle-icon.svg" alt="angle-icon" /></span>
 					</button>
-					<p class="font-figtree text-xs font-normal text-white">
+					<p class="font-figtree fo text-text-primary text-xs">
 						1-minute quiz for personalized insights
 					</p>
 				</div>
 
 				<!-- Footer -->
-				<footer class="flex flex-col gap-y-3 text-center lg:text-start">
-					<p class="font-figtree text-xs font-medium text-[#ABABAB]">
-						By clicking "Get Started", you agree with our
-						<a class="no-underline hover:text-white hover:underline" href="/terms"
-							>Terms and Conditions</a
-						>,
-						<a class="no-underline hover:text-white hover:underline" href="/privacy"
-							>Privacy Policy</a
-						>, and
-						<a class="no-underline hover:text-white hover:underline" href="/subscription"
-							>Subscription Terms</a
-						>.
-					</p>
-					<p class="font-figtree text-xs font-medium text-[#ABABAB]">
-						Fametonic © 2025. All Rights Reserved.
-					</p>
-				</footer>
+				<Footer />
 			</div>
 		</div>
 
