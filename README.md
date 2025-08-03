@@ -11,7 +11,6 @@ Discover Fametonic: the ultimate platform for creators to go viral on TikTok, gr
 
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
-- [Development](#Development)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [lighthouse Scores](#lighthouse-scores)
@@ -77,19 +76,6 @@ fametonic/
 ├── e2e/                         # End-to-end tests
 └── package.json                 # Dependencies and scripts
 ```
-
-### 💻 Development
-
-### Available Scripts
-
-| Command           | Description               |
-| ----------------- | ------------------------- |
-| `npm run dev`     | Start development server  |
-| `npm run build`   | Build for production      |
-| `npm run preview` | Preview production build  |
-| `npm run check`   | Type check with SvelteKit |
-| `npm run lint`    | Run ESLint and Prettier   |
-| `npm run format`  | Format code with Prettier |
 
 ### Component Usage
 
