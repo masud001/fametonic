@@ -5,6 +5,7 @@ Discover Fametonic: the ultimate platform for creators to go viral on TikTok, gr
 ## 🚀 Live Demo
 
 - [Live Demo](https://fametonic-live-demo.netlify.app/)
+- [GitHub Repository](https://github.com/masud001/fametonic)
 
 ## 📋 Table of Contents
 
@@ -253,15 +254,6 @@ The mobile navigation uses a centralized store (`src/lib/stores/mobileNavigation
 - I used WEBP image format for page speed optimization. this image is little fade from original png image. PNG image size is much bigger than WEBP image.
 
 - I use separate image for content and logo Desktop and mobile both.
-
-## 📄 License
-
-This project is private and proprietary.
-
-## 🔗 Related links
-
-- [GitHub Repository](https://github.com/masud001/fametonic).
-- [Live Demo](https://fametonic-live-demo.netlify.app/).
 
 ---
 
