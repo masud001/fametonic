@@ -1,6 +1,6 @@
-# Fametonic - Social Media Career Platform
+# Fametonic - The Smart Way to Go Viral on Social Media
 
-A modern, performance-optimized landing page for Fametonic, a platform that helps aspiring influencers turn their social media presence into a profitable career.
+Discover Fametonic: the ultimate platform for creators to go viral on TikTok, grow on YouTube, and monetize social media. Unlock success and financial...
 
 ## 🚀 Live Demo
 
@@ -15,6 +15,7 @@ A modern, performance-optimized landing page for Fametonic, a platform that help
 - [Development](#development)
 - [Testing](#testing)
 - [Deployment](#deployment)
+- [lighthouse Scores](#lighthouse-scores)
 
 ## ✨ Features
 
