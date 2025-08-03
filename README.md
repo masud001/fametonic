@@ -1,6 +1,6 @@
 ## Navbar for Mobile
 
--- # I already implemented Mobile navbar, but as for the design i make it hidden. you can remove "hidden" class from `Header component` `drawer` and `backdrop` elements. i commented it to `Header Component`
+- I already implemented Mobile navbar, but as for the design i make it hidden. you can remove "hidden" class from `Header component` `drawer` and `backdrop` elements. i commented it to `Header Component`
 
 ## Related links
 
