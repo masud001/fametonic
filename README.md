@@ -15,7 +15,6 @@ A modern, performance-optimized landing page for Fametonic, a platform that help
 - [Development](#development)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Performance](#performance)
 
 ## ✨ Features
 
@@ -46,17 +45,20 @@ A modern, performance-optimized landing page for Fametonic, a platform that help
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/masud001/fametonic.git
    cd fametonic
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -99,14 +101,14 @@ fametonic/
 
 ### Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run check` | Type check with SvelteKit |
-| `npm run lint` | Run ESLint and Prettier |
-| `npm run format` | Format code with Prettier |
+| Command           | Description               |
+| ----------------- | ------------------------- |
+| `npm run dev`     | Start development server  |
+| `npm run build`   | Build for production      |
+| `npm run preview` | Preview production build  |
+| `npm run check`   | Type check with SvelteKit |
+| `npm run lint`    | Run ESLint and Prettier   |
+| `npm run format`  | Format code with Prettier |
 
 ### Component Usage
 
@@ -114,20 +116,21 @@ All components are available through centralized imports:
 
 ```svelte
 <script>
-// Import multiple components at once
-import { Header, Footer, Contents, AnnouncementBar, KeyFeatures } from '$lib';
+	// Import multiple components at once
+	import { Header, Footer, Contents, AnnouncementBar, KeyFeatures } from '$lib';
 
-// Import mobile navigation components
-import { MobileMenuButton, MobileBackdrop, MobileNavigation } from '$lib';
+	// Import mobile navigation components
+	import { MobileMenuButton, MobileBackdrop, MobileNavigation } from '$lib';
 
-// Import mobile navigation store and actions
-import { mobileNavigationStore, mobileNavigationActions } from '$lib';
+	// Import mobile navigation store and actions
+	import { mobileNavigationStore, mobileNavigationActions } from '$lib';
 </script>
 ```
 
 ### Code Quality
 
 The project uses:
+
 - **ESLint** for code linting
 - **Prettier** for code formatting
 - **TypeScript** for type safety
@@ -136,16 +139,19 @@ The project uses:
 ## 🧪 Testing
 
 ### Unit Tests
+
 ```bash
 npm run test:unit
 ```
 
 ### End-to-End Tests
+
 ```bash
 npm run test:e2e
 ```
 
 ### Run All Tests
+
 ```bash
 npm run test
 ```
@@ -155,6 +161,7 @@ npm run test
 The project is configured for Netlify deployment:
 
 1. **Build the project**
+
    ```bash
    npm run build
    ```
@@ -163,16 +170,6 @@ The project is configured for Netlify deployment:
    - Connect your GitHub repository to Netlify
    - Set build command: `npm run build`
    - Set publish directory: `build`
-
-## 📊 Performance
-
-The project is optimized for performance with:
-
-- **WebP images** for faster loading
-- **Lazy loading** for images
-- **Optimized fonts** with variable font support
-- **Minified CSS and JS** in production
-- **CDN-ready** static assets
 
 ### Lighthouse Scores
 
@@ -184,16 +181,19 @@ The project is optimized for performance with:
 ## 🎨 Design System
 
 ### Colors
+
 - **Primary**: `#00E7F9` (Neon Blue)
 - **Secondary**: `#FC004E` (Neon Pink)
 - **Background**: `#010101` (Dark)
 - **Text**: `#FFFFFF` (White)
 
 ### Typography
+
 - **Primary Font**: Figtree (Variable font)
 - **Display Font**: Urbanist (Variable font)
 
 ### Components
+
 - **AnnouncementBar**: Promotional messages
 - **Header**: Navigation with responsive logo and mobile menu button
 - **Contents**: Hero section with value proposition
@@ -201,6 +201,7 @@ The project is optimized for performance with:
 - **Footer**: Additional information
 
 ### Mobile Navigation Components
+
 - **MobileMenuButton**: Animated hamburger menu button with toggle functionality
 - **MobileBackdrop**: Clickable backdrop overlay for mobile navigation
 - **MobileNavigation**: Sliding navigation drawer with navigation links
@@ -211,23 +212,28 @@ The project is optimized for performance with:
 The project includes a complete mobile navigation system with centralized state management:
 
 ### 🏗️ Architecture
+
 - **Centralized State**: Uses Svelte stores for single source of truth
 - **Reusable Components**: Modular components that can be used anywhere
 - **Accessibility**: Full ARIA support and keyboard navigation
 - **Responsive Design**: Mobile-first approach with smooth animations
 
 ### 🔧 Components
+
 - **MobileMenuButton**: Currently active - hamburger menu button visible on mobile
 - **MobileBackdrop**: Temporarily hidden - backdrop overlay for mobile navigation
 - **MobileNavigation**: Temporarily hidden - sliding navigation drawer
 
 ### 📍 Current Status
+
 - ✅ **MobileMenuButton**: Active and functional
 - ⏸️ **MobileBackdrop**: Temporarily commented out in Header component
 - ⏸️ **MobileNavigation**: Temporarily commented out in Header component
 
 ### 🚀 To Re-enable Full Mobile Navigation
+
 Uncomment these lines in `src/lib/components/Header.svelte`:
+
 ```svelte
 <!-- Mobile Navigation Components - Temporarily Hidden -->
 <MobileBackdrop />
@@ -235,7 +241,9 @@ Uncomment these lines in `src/lib/components/Header.svelte`:
 ```
 
 ### 🎯 State Management
+
 The mobile navigation uses a centralized store (`src/lib/stores/mobileNavigation.ts`) that provides:
+
 - **mobileNavigationStore**: Reactive state for navigation open/close
 - **mobileNavigationActions**: Methods to toggle, open, and close navigation
 
@@ -244,7 +252,6 @@ The mobile navigation uses a centralized store (`src/lib/stores/mobileNavigation
 - I used WEBP image format for page speed optimization. this image is little fade from original png image. PNG image size is much bigger than WEBP image.
 
 - I use separate image for content and logo Desktop and mobile both.
-
 
 ## 📄 License
 
