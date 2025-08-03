@@ -1,13 +1,6 @@
 <script lang="ts">
 	import { Footer, KeyFeatures } from '$lib';
-	import { onMount } from 'svelte';
-	let features: string[] = [];
-
-	// Fetch the JSON data dynamically
-	onMount(async () => {
-		const response = await fetch('/data/keyFeatures.json');
-		features = await response.json();
-	});
+	import { keyFeatures } from '$lib';
 </script>
 
 <section
@@ -36,7 +29,7 @@
 			</h2>
 
 			<!-- Key Features List -->
-			<KeyFeatures {features} />
+			<KeyFeatures features={keyFeatures} />
 
 			<!-- Call to Action -->
 			<div class="flex flex-col-reverse gap-y-[30px] lg:flex-col">
@@ -47,8 +40,12 @@
 						class="font-figtree shadow-button text-text-primary bg-secondary flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl px-10 py-2 text-xl"
 						aria-label="Take the 1-minute quiz to get started"
 					>
-						GET STARTED <span><img src="/images/angle-icon.svg" alt="angle-icon" /></span>
+						GET STARTED 
+						<span>
+							<img src="/images/angle-icon.svg" alt="angle-icon" />
+						</span>
 					</button>
+					
 					<p class="font-figtree fo text-text-primary text-xs">
 						1-minute quiz for personalized insights
 					</p>
@@ -59,7 +56,7 @@
 			</div>
 		</div>
 
-		<!-- Right Content -->
+		<!-- Right Content - Hero Image -->
 		<div class="flex w-full flex-1 justify-center md:w-1/2 lg:justify-end">
 			<picture>
 				<source srcset="/images/fametonic-home-page-image-mobile.webp" media="(max-width: 768px)" />

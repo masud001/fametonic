@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Announcement } from '$lib/types';
+	import type { Announcement } from '$lib';
 	export let announcements: Announcement[] = [];
 </script>
 
@@ -16,7 +16,6 @@
 					aria-label={announcement.ariaLabel}
 					href={announcement.link}
 				>
-					<!-- if colon found -->
 					{#if announcement.text.includes(':')}
 						<span class="text-primary-light font-extrabold uppercase">
 							{announcement.text.split(':')[0]}:
@@ -25,7 +24,6 @@
 							{announcement.text.split(':')[1]}
 						</span>
 					{:else}
-						<!-- Fallback if no colon is found -->
 						<span class="text-text-primary font-semibold">
 							{announcement.text}
 						</span>

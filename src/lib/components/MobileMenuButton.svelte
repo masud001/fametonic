@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { mobileNavigationStore, mobileNavigationActions } from '$lib/stores/mobileNavigation';
+	import { mobileNavigationStore, mobileNavigationActions } from '$lib';
 	
 	// Subscribe to the store
 	$: isOpen = $mobileNavigationStore.isOpen;

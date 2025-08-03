@@ -1,5 +1,6 @@
 <script lang="ts">
-	export let features: string[] = [];
+	import type { KeyFeature } from '$lib';
+	export let features: KeyFeature[] = [];
 </script>
 
 <ul
@@ -7,10 +8,17 @@
 	aria-label="Key features"
 	role="list"
 >
-	{#each features as feature (feature)}
+	{#each features as feature (feature.id)}
 		<li class="flex items-start gap-x-2.5" role="listitem">
-			<span class="flex-shrink-0 font-bold" aria-hidden="true">✨</span>
-			<p class="font-figtree text-base font-semibold md:leading-[1.38] text-text-primary">{feature}</p>
+			<!-- Feature Icon -->
+			<span class="flex-shrink-0 font-bold" aria-hidden="true">
+				{feature.icon || '✨'}
+			</span>
+			
+			<!-- Feature Text -->
+			<p class="font-figtree text-base font-semibold md:leading-[1.38] text-text-primary">
+				{feature.text}
+			</p>
 		</li>
 	{/each}
 </ul>

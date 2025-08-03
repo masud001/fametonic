@@ -89,9 +89,6 @@ fametonic/
 │   │   └── +page.svelte         # Home page
 │   └── app.css                  # Global styles and Tailwind config
 ├── static/
-│   ├── data/                    # JSON content files
-│   │   ├── announcements.json
-│   │   └── keyFeatures.json
 │   ├── images/                  # Optimized images (WebP format)
 │   └── fonts/                   # Custom font files
 ├── e2e/                         # End-to-end tests

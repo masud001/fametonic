@@ -1,4 +1,3 @@
-// place files you want to import through the `$lib` alias in this folder.
 
 // Main Layout Components
 export { default as Header } from './components/Header.svelte';
@@ -13,7 +12,15 @@ export { default as KeyFeatures } from './components/KeyFeatures.svelte';
 export { default as MobileBackdrop } from './components/MobileBackdrop.svelte';
 export { default as MobileNavigation } from './components/MobileNavigation.svelte';
 export { default as MobileMenuButton } from './components/MobileMenuButton.svelte';
-export { default as MobileNavigationDemo } from './components/MobileNavigationDemo.svelte';
 
-// Mobile Navigation Store
+
+// store 
 export { mobileNavigationStore, mobileNavigationActions } from './stores/mobileNavigation';
+
+// type 
+export type {NavigationItem, Announcement, KeyFeature } from './types';
+
+// data 
+export { navigationItems,announcements, keyFeatures ,siteConfig} from './config/data';
+
+

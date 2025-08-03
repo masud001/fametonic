@@ -1,14 +1,9 @@
 <script lang="ts">
-	import { mobileNavigationStore, mobileNavigationActions } from '$lib/stores/mobileNavigation';
+	import { mobileNavigationStore, mobileNavigationActions } from '$lib';
+	import { navigationItems } from '$lib';
 	
 	// Subscribe to the store
 	$: isOpen = $mobileNavigationStore.isOpen;
-
-	// Navigation items - can be made configurable via props if needed
-	const navigationItems = [
-		{ href: '/', label: 'About' },
-		{ href: '/', label: 'Contact' }
-	];
 </script>
 
 <div
@@ -25,6 +20,7 @@
 				href={item.href}
 				class="font-figtree text-menu-color hover:text-hover-text mb-4 text-lg font-semibold leading-normal transition-colors duration-200"
 				on:click={mobileNavigationActions.close}
+				{...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
 			>
 				{item.label}
 			</a>
