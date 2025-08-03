@@ -17,7 +17,7 @@ Discover Fametonic: the ultimate platform for creators to go viral on TikTok, gr
 - [Deployment](#deployment)
 - [lighthouse Scores](#lighthouse-scores)
 
-## ✨ Features
+### ✨ Features
 
 - **Responsive Design**: Mobile-first approach with desktop optimization
 - **Performance Optimized**: WebP images, lazy loading, and optimized assets
@@ -26,7 +26,7 @@ Discover Fametonic: the ultimate platform for creators to go viral on TikTok, gr
 - **Content Management**: JSON-based content for easy updates
 - **SEO Optimized**: Proper meta tags and semantic structure
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 - **Framework**: [SvelteKit 2.22.0](https://kit.svelte.dev/)
 - **UI Library**: [Svelte 5.0.0](https://svelte.dev/)
@@ -36,7 +36,7 @@ Discover Fametonic: the ultimate platform for creators to go viral on TikTok, gr
 - **Testing**: [Vitest](https://vitest.dev/) + [Playwright](https://playwright.dev/)
 - **Deployment**: [Netlify](https://netlify.com/)
 
-## 🚀 Getting Started
+### 🚀 Getting Started
 
 ### Prerequisites
 
@@ -67,7 +67,7 @@ Discover Fametonic: the ultimate platform for creators to go viral on TikTok, gr
 4. **Open your browser**
    Navigate to `http://localhost:5173`
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 ```
 fametonic/
@@ -98,7 +98,7 @@ fametonic/
 └── package.json                 # Dependencies and scripts
 ```
 
-## 💻 Development
+### 💻 Development
 
 ### Available Scripts
 
@@ -137,7 +137,7 @@ The project uses:
 - **TypeScript** for type safety
 - **SvelteKit sync** for framework validation
 
-## 🧪 Testing
+### 🧪 Testing
 
 ### Unit Tests
 
@@ -157,7 +157,7 @@ npm run test:e2e
 npm run test
 ```
 
-## 🚀 Deployment
+### 🚀 Deployment
 
 The project is configured for Netlify deployment:
 
