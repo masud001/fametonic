@@ -12,7 +12,7 @@ Discover Fametonic: the ultimate platform for creators to go viral on TikTok, gr
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
-- [Development](#development)
+- [Development](#Development)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [lighthouse Scores](#lighthouse-scores)
