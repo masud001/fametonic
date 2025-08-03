@@ -16,6 +16,7 @@
 					aria-label={announcement.ariaLabel}
 					href={announcement.link}
 				>
+					<!-- if colon found -->
 					{#if announcement.text.includes(':')}
 						<span class="text-primary-light font-extrabold uppercase">
 							{announcement.text.split(':')[0]}:
