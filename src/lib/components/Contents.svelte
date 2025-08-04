@@ -23,7 +23,7 @@
 			<!-- Subheading -->
 			<h2
 				aria-level="2"
-				class="text-shadow-[0_4px_2px_#fc004e] font-urbanist text-[35px] font-bold leading-[42px] text-[#00E7F9] max-[480px]:text-[25px] max-[480px]:leading-[30px]"
+				class="text-shadow-[0_4px_2px_#fc004e] font-urbanist text-[35px] font-bold leading-[42px] text-primary-light max-[480px]:text-[25px] max-[480px]:leading-[30px]"
 			>
 				Discover your way to success with Fametonic:
 			</h2>
