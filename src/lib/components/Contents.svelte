@@ -59,8 +59,8 @@
 		<!-- Right Content - Hero Image -->
 		<div class="flex w-full flex-1 justify-center md:w-1/2 lg:justify-end">
 			<picture>
-				<source srcset="/images/fametonic-home-page.png" media="(max-width: 768px)" type="image/webp"/>
-				<source srcset="/images/fametonic-home-page.png" media="(min-width: 769px)" type="image/webp" />
+				<source srcset="/images/fametonic-home-page.png" media="(max-width: 768px)" type="image/png"/>
+				<source srcset="/images/fametonic-home-page.png" media="(min-width: 769px)" type="image/png" />
 				<img
 					alt="Fametonic App Screenshot showcasing features for social media success"
 					loading="eager"
